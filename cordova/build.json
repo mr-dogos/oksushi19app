@@ -1,0 +1,18 @@
+{
+"android": {
+"debug": {
+"keystore": "dogos.jks",
+"storePassword": "0022464",
+"alias": "dogos",
+"password": "0022464",
+"keystoreType": ""
+},
+"release": {
+"keystore": "dogos.jks",
+"storePassword": "0022464",
+"alias": "dogos",
+"password": "0022464",
+"keystoreType": ""
+}
+}
+}

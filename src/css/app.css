@@ -1,0 +1,288 @@
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #00b000;
+  --f7-theme-color-rgb: 0, 176, 0;
+  --f7-theme-color-shade: #008700;
+  --f7-theme-color-tint: #00d900;
+}
+
+/* Your app custom styles here */
+
+/* Invert navigation bars to fill style */
+:root,
+:root.theme-dark,
+:root .theme-dark {
+  --f7-bars-bg-color: var(--f7-theme-color);
+  --f7-bars-bg-color-rgb: var(--f7-theme-color-rgb);
+  --f7-bars-translucent-opacity: 0.9;
+  --f7-bars-text-color: #fff;
+  --f7-bars-link-color: #fff;
+  --f7-navbar-subtitle-text-color: rgba(255,255,255,0.85);
+  --f7-bars-border-color: transparent;
+  --f7-tabbar-link-active-color: #fff;
+  --f7-tabbar-link-inactive-color: rgba(255,255,255,0.54);
+  --f7-sheet-border-color: transparent;
+  --f7-tabbar-link-active-border-color: #fff;
+}
+.appbar,
+.navbar,
+.toolbar,
+.subnavbar,
+.calendar-header,
+.calendar-footer {
+  --f7-touch-ripple-color: var(--f7-touch-ripple-white);
+  --f7-link-highlight-color: var(--f7-link-highlight-white);
+  --f7-button-text-color: #fff;
+  --f7-button-pressed-bg-color: rgba(255,255,255,0.1);
+}
+.navbar-large-transparent,
+.navbar-large.navbar-transparent {
+  --f7-navbar-large-title-text-color: #000;
+
+  --r: 0;
+  --g: 176;
+  --b: 0;
+  --progress: var(--f7-navbar-large-collapse-progress);
+  --f7-bars-link-color: rgb(
+    calc(var(--r) + (255 - var(--r)) * var(--progress)),
+    calc(var(--g) + (255 - var(--g)) * var(--progress)),
+    calc(var(--b) + (255 - var(--b)) * var(--progress))
+  );
+}
+.theme-dark .navbar-large-transparent,
+.theme-dark .navbar-large.navbar-transparent {
+  --f7-navbar-large-title-text-color: #fff;
+}
+
+/* Your app custom styles here */
+
+.panel-backdrop {
+    background-color: rgba(128,128,128,.4);
+}
+.navbar .title {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.badge.color-pink {
+    background: #ee7e69;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.panel.panel-left .view .page-content {
+    background: #ffffff;
+}
+.panel.panel-left .view .list.inset {
+    margin-left: 0;
+    margin-right: 0;
+}
+.panel.panel-left .view .list.inset .list-button {
+    color: gray;
+}
+.panel.panel-left .view .list.inset .list-button:after {
+    content: '';
+    border-bottom: 1px solid rgba(128,128,128,0.22);
+    position: absolute;
+    display: block;
+    z-index: 15;
+}
+.page-content {
+    background:linear-gradient(0deg, rgb(252, 244, 237) 0%, rgb(255, 255, 255) 80%);
+}
+#menulogo .logo {
+    width: 160px;
+    height: 140px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/images/logosushi19.png);
+}
+#menulogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../assets/images/fonscreen.jpg);
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    margin: 0;
+}
+#item-cat ul {
+    background: transparent;
+}
+#item-cat li {
+    min-height: 16.4vh;
+    margin-bottom: 4.2vh;
+    border-radius: 1vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160%;
+}
+#item-cat li a {
+    min-height: 16.4vh;
+}
+#item-cat li:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252,244,236,.6);
+    position: absolute;
+    display: block;
+}
+#item-cat h3 {
+    font-size: 1.8rem;
+    text-shadow:0px 0px 10px #ffffff;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+#item-cat p {
+    text-align: center;
+    text-shadow:0px 0px 10px #ffffff;
+    font-style: italic;
+    font-size: .8rem;
+    color: #474747;
+    line-height: 12pt;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+.tabs .tab-active {
+    padding-top: 0;
+}
+.card-img .card-header{
+    min-height: 32vh;
+    background-size: cover;
+    background-position: center;
+}
+.card-name {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: var(--f7-theme-color);
+    text-shadow:0px 1px 4px #ffffff,0px -1px 4px #ffffff,0px 1px 4px #ffffff,0px -1px 4px #ffffff;
+}
+.card-dir {
+    font-style: italic;
+    color: gray;
+}
+.card-weight {
+    color: gray;
+}
+.card-dir span,.card-weight span {
+    font-style: normal;
+    font-weight: 800;
+    color: black;
+}
+.card-price {
+    text-align: right;
+}
+.card-price p {
+    color: black;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+.card-price p span {
+    color: gray;
+    font-style: italic;
+    font-weight: 400;
+}
+#tab-2 .card-footer {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#tab-2 .card-footer .button.button-fill {
+    padding: 2px 15px;
+}
+.card-header a.link.item-heart {
+    top: 1rem; right: 1rem;
+    position: absolute;
+    color: white;
+    text-shadow:0px 0px 10px #8e8e93;
+}
+.card-header a.link.item-heart.active {
+    color: #ee7e69;
+    text-shadow:0px 0px 5px #ffffff;
+}
+.card-img {
+    min-height: 10vh;
+    border-radius: 1vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cart-name {
+    margin: 5px 0;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.t-small {
+    text-align: left;
+    font-size: .8rem;
+}
+.t-small span,.price-total span {
+    font-weight: 800;
+}
+.f-top {
+    margin-top: .8rem;
+}
+.price-total {
+    font-size: 1.0rem;
+    margin-top: 1.2rem;
+    font-style: italic;
+    color: var(--f7-theme-color);
+}
+#error {
+    background: #ff2d55;
+}
+#error p {
+    width: 100%;
+    text-align: center;
+}
+.error-box {
+    text-align: center;
+}
+.error-box p {
+    color: #ee7e69;
+    font-weight: 800;
+}
+.smail-text{
+    text-align: center;
+    font-size: 80%;
+}
+.smail-text.danger{
+    color: #ee7e69;
+}
+.sheet-modal-swipe-step{
+    width: 100%;
+    position: fixed;
+    padding-top: 4vh;
+    background: rgba(255, 255, 255, .92);
+    border-top: 3px solid rgb(252, 244, 237);
+    bottom: 0;
+    z-index: 10;
+}
+.sheet-modal-swipe-step a.link{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#place_order .navbar .title{
+    text-align: left;
+}
+#place_order .list ul{
+    background: transparent;
+}
+#place_order .page-content{
+    padding-top: 8vh;
+}
+#onas p{
+    text-align: justify;
+    color: #474747;
+}
+.list.accordion-list ul{
+    background: transparent;
+}
+#uuid{
+    display: none;
+}
